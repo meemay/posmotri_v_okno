@@ -51,8 +51,8 @@ ol {
 }
 
 .button {
-  width: 194px;
-  height: 34px;
+  inline-size: 194px;
+  block-size: 34px;
   border: 1px solid #FFF;
   background-color: transparent;
   color: inherit;
@@ -82,13 +82,13 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
 }
 
 .result__video {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -119,12 +119,12 @@ ol {
 
 .search-form__textfield {
   border: none;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-block-start: 1px solid #FFF;
+  border-block-end: 1px solid #FFF;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.70);
-  width: 225px;
-  height: 27px;
+  inline-size: 225px;
+  block-size: 27px;
   padding: 0;
   display: flex;
   align-items: center;
@@ -139,7 +139,7 @@ ol {
 }
 
 .search-form__label {
-  width: fit-content;
+  inline-size: fit-content;
   cursor: pointer;
   display: flex;
   gap: 5px;
@@ -153,8 +153,8 @@ ol {
 
 .search-form__pseudo-checkbox {
   border: 1px solid #fff;
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   display: inline-block;
 }
 
@@ -163,8 +163,8 @@ ol {
 }
 
 .content__details {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -186,7 +186,7 @@ ol {
 
 .content__list {
   position: relative;
-  height: 298px;
+  block-size: 298px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -211,8 +211,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   object-position: center;
 }
@@ -236,5 +236,5 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  inline-size: 100%;
 }
