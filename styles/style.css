@@ -40,7 +40,7 @@ ol {
   list-style: none;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -48,7 +48,25 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} */
+}
+
+.button {
+  width: 194px;
+  height: 34px;
+  border: 1px solid #FFF;
+  background-color: transparent;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+}
 
 .content {
   padding: 133px 30px;
@@ -85,11 +103,63 @@ ol {
   align-items: start;
 }
 
+.search-form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .search-form__fieldset-title {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.search-form__textfield {
+  border: none;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.70);
+  width: 225px;
+  height: 27px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.search-form__label {
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+}
+
+.search-form__submit-button {
+  align-self: end;
 }
 
 .content__details {
@@ -101,6 +171,7 @@ ol {
 }
 
 .title {
+  min-inline-size: 399px; /* use pseudo for volume when not found? */
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
@@ -162,4 +233,8 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: #fff;
+}
+
+.more-button {
+  width: 100%;
 }
